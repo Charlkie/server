@@ -88,7 +88,7 @@ def active_time(data):
     if activityType == "createChatroom":
         otherUser = data["otherUser"]
         createChatroom = data["createChatroom"]
-        print("New created chatroom: ", end="")
+        print("New created chatroom: ")
         print(createChatroom)
         print("From id" + otherUser)
         emit("createChatroom", {

@@ -11,15 +11,15 @@ app = create_app()
 @app.shell_context_processor
 def make_shell_context():
     # return {
-    #     'db': db, 
-    #     'User': User, 
-    #     "Message": Message, 
+    #     'db': db,
+    #     'User': User,
+    #     "Message": Message,
     #     "Line": Line,
     #     "Day": Day,
     #     "Class": Class,
     #     "Falcuty": Falcuty,
     #     "Line_Schedule": Line_Schedule,
-    #     "GloveEmbedding": GloveEmbedding, 
+    #     "GloveEmbedding": GloveEmbedding,
     #     "emojifier_setup": emojifier_setup,
     #     "schedule_setup": schedule_setup,
     #     "setup_line_time": setup_line_time,
@@ -32,11 +32,11 @@ def make_shell_context():
 
 
 # with app.app_context():
-#     try: 
+#     try:
 #         schedule_setup(db, Day, Line, Line_Schedule)
 #         setup_line_time(db, Line_Schedule)
 #         falcuty_setup(db, Falcuty)
-#     except: 
+#     except:
 #         print("Already created")
 
 app.run(host='0.0.0.0')
